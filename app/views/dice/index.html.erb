@@ -1,5 +1,7 @@
 <h1>dICE dICE BABY!</h1>
 
+
+
 <% d1 = rand(1..6) %>
 <% d2 = rand(1..6) %>
 
@@ -7,6 +9,22 @@
 Dice 1: <%=d1%>
 </p>
 
+
 <p>
 Dice 2: <%=d2%>
+</p>
+
+<p>
+<img src="/images/dice/<%= d1 %>.svg" alt="">
+<img src="/images/dice/<%= d2 %>.svg "alt="">
+</p>
+
+<%
+d = d1 + d2
+%>
+
+<p>The total is: <%=d%></p>
+
+<p>
+  <a href="/dice/">Roll again!</a>
 </p>

@@ -1,0 +1,18 @@
+<h1>
+Companies!
+</h1>
+
+<%
+companies = Company.all
+%>
+
+
+<p>
+No. of companies: <%=companies.count%>
+</p>
+
+<ul>
+  <% for company in companies %>
+  <li> <%= company ["name"] %> - <%= company ["state"]  %> </li>
+  <% end %>
+</ul>
